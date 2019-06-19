@@ -1,0 +1,58 @@
+
+    body{
+        background-color: cornsilk;
+    }
+    /* button {
+        background-color: darkslategrey;
+        color: white;
+        cursor: pointer;
+        padding: 10px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+   } */
+   
+   #input1 {
+      border-color: grey;
+   }
+   #input2{
+      border-color: grey;
+   }
+   button {
+      position: relative;
+      background-color: grey;
+      border: none;
+      font-size: 28px;
+      color: #FFFFFF;
+      padding: 10px;
+      width: 50px;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+   button:after {
+      content: "";
+      background: black;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -20px!important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 1s
+    }
+    
+   button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s
+    }
+    #input1:hover{
+       background-color: grey;
+    }

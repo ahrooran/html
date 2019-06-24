@@ -1,0 +1,62 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body onmousemove = "doSomething()">
+        
+        <!-- <span id="x" style="position: absolute; top: 0; left: 0">
+            nationwide
+            <span> -->
+
+             
+       <!-- <form  >
+            <input type="text" id="inputUsername"  name="t1" >
+            <input type="text" id="inputUsername"  name="t2" >
+            <input type="text" id="inputUsername"  name="t3" >
+            <button onclick="return add() " type="submit"></button>
+        </form> -->
+
+        <script>
+            class Draw{
+                constructor(T,L){
+
+                var ref = document.createElement("span");
+                ref.innerHTML=0;
+                ref.style.position="absolute";
+                ref.style.top=T;
+                ref.style.left=L;
+                document.body.appendChild(ref);
+                }
+            }
+
+            function doSomething(){
+                var X = event.clientX;
+                var Y = event.clientY;
+                var ref = new Draw(Y,X);
+            }
+
+            // function doit(){
+            //     var ref=document.getElementById('x');
+            //     ref.style.top = window.event.clientY;
+            //     ref.style.left = window.event.clientX;
+            // }
+
+            // function add(){
+            //     var t1 = window.document.forms[0].elements[0];
+            //     var t2 = window.document.forms[0].elements[1];
+            //     var t3 = window.document.forms[0].elements[2];
+
+
+            //     if (t1.value == ""){
+            //         window.alert("!!!!!!!!!")
+            //     }
+            //     else if (t2.value == ""){
+            //         window.alert("!!!!!!!!!")
+            //     }
+            //     else {
+            //         t3.value = parseInt(t1.value)+parseInt(t2.value);
+            //     }
+            // }
+        </script>
+    </body>
+</html>
